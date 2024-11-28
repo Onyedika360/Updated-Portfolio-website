@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/7a59e3395a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <nav id="desktop-nav">
+      <div class="logo">Onyedika Ojukwu</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Onyedika Ojukwu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Untitled design.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Onyedika Ojukwu</h1>
+        <p class="section__text__p2" id="typing">Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume2024.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedln.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/onyedikachukwu-ojukwu'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Onyedika360'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/aboutme.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Data Science</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Texas Southern University</p>
+              <p>B.Sc. Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Data Science student at Texas Southern University with Division 1 athlete background. Experienced in Python, C++, R, and ML frameworks (TensorFlow, PyTorch). 
+              Previously completed Data Science Research Internship focused on Alzheimer's disease using EEG data and CNN models. Seeking opportunities to apply technical and 
+              analytical skills in software development, data science, and cloud computing while leveraging strong teamwork abilities developed through athletics & club leadership
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Packages & Dev Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tensorflow</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PyTorch</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Numpy</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img 
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Seaborn</h3>
+                <p>Intermediate</p>
+              </div>
+
+              </article>
+               
+              
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <!-- <form>
+            <button formaction="https://drive.google.com/file/d/1M2Z9FHAeEsBdp1_bqP7LDUgy6RJLFNf7/view" class="btn btn-secondary">Get Resume</button>
+          </form> -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor Degree in Computer Science</h4>
+              <h5>2022 - 2024</h5>
+              <p><em>Texas Southern University, Houston, TX</em></p>
+              <p>GPA: 3.7/4.0 | Dean’s List (x3) <br>
+              LSAM Honor Scholar | TIGERS Data Science Club - Founding President 2023-2024 | National Society of Black Engineers (NSBE)</p>
+              <p> <em>Relevant Coursework:</em> <br>Linear Algebra, Calculus II, Statistics & Probability, Software Engineering, Intro to Data Science and Machine Learning, Advanced OOP Using C++, Data Structures and Algorithms, Theory of Computation,
+                Programming Language and Design, Database Management Systems, Computer Organization and Architecture,
+                Assembly Language Programming, LAN, Operating Systems</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Data science intern</h4>
+              <h5>May 2023 - June 2024</h5>
+              <p><em>Texas Southern University, Houston, TX </em></p>
+              <ul>
+                <li>Researched Alzheimer’s disease and other neurodegenerative diseases by analyzing EEG signals, gaining domain knowledge.</li>
+                <li>Used Matplotlib and Seaborn to visualize EEG datasets from the OpenNeuro repository. Applied temporal analysis on derivative data and transformed time-series data into the frequency domain using Scipy, allowing for correlation identification.</li>
+                <li>Applied computational techniques such as FFT, and utilized the MNE library to process EEG data into epochs for CNN model fitting.</li>
+                <li>Built a CNN model for feature extraction on time-domain data with a fully connected binary classification layer using TensorFlow. Achieved a prediction accuracy of 97.98% and an AUC score of 0.9971.</li>
+              </ul>
+              
+            </div>
+            <div class="resume-item">
+              <h4>cloud Technician</h4>
+              <h5>Jan 2022 - May 2022</h5>
+              <p><em>FreeLance </em></p>
+                <ul>
+                  <li>Built SMTP servers on reliable cloud platforms like AWS and Azure, utilizing Ubuntu servers configured via SSH.</li>
+                  <li>Empowered small businesses to boost product visibility and drive traffic effectively.</li>
+                  <li>Maintained clients’ products such as Email servers by ensuring the SSL Certificate is authenticated correctly to ensure reliable traffic.</li>
+                  <li>Designed and implemented a serverless API gateway using DynamoDB, leveraging NoSQL database principles and partition keys for efficiently collecting long URLs from short ID tables.</li>
+                  <li>Added a custom domain to the API gateway to serve as a shortener for clients to present their businesses professionally.</li>
+                </ul>
+                
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+  
+              
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/groupmebot.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">GroupME-Reminder Bot</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Onyedika360/GroupME-Reminder-BOT'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Onyedika360/GroupME-Reminder-BOT'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proj2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Image-Crop-Using-RetinaFace</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Onyedika360/Image-Crop-Using-RetinaFace'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Onyedika360/Image-Crop-Using-RetinaFace'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Proj3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">neurodegenerative classification using ML</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Onyedika360/EGG-Binaryclassification'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Onyedika360/EGG-Binaryclassification'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <!-- <p><i class="fa-solid fa-envelope"></i>Onyedikachukwuojukwu@outlook.com</p>
+      <p><i class="fa-solid fa-phone"></i>(346)-475-8935</p> -->
+      <article>
+        <img 
+        src="./assets/email-icon-121.png"
+        alt="Experience icon"
+        class="icon"
+      />
+      <div>
+        <h3>Email: <p>Onyedikachukwuojukwu@outlook.com</p></h3>
+      </div>
+
+      </article>
+
+  
+      <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100092473186395&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://linkedin.com/in/onyedikachukwu-ojukwu"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Onyedika360"><i class="fa-brands fa-github"></i></a>
+      </div>
+  </div>
+  <div class="contact-right">
+      <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn-color-2 project-btn">Submit</button>
+      </form>
+
+      <span id="msg"></span>
+  </div>
+
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Onyedika Ojukwu. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
